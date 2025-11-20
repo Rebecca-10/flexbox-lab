@@ -1,0 +1,174 @@
+/* styles.css */
+
+/* Global reset + base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* 1. Top Nav */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-right button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.sign-up {
+  background-color: #d63384; /* pink-ish, similar to the design */
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/* 2. Hero Section */
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: black; /* dark background */
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.hero-content p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.search-bar {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.trending-items {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.trending-items button {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffffff33; /* semi-transparent white */
+  color: white;
+}
+
+/* 3. Subnav / Filter Section */
+#subnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+
+.popular-btn,
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  background: none;
+  border-radius: 4px;
+}
+
+/* 4. Card Grid */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card-body {
+  flex: 1;
+  background-color: #ccc; /* placeholder gray for content area */
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #f9f9f9;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-stats span {
+  margin-left: 0.5rem;
+}
