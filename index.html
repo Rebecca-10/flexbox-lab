@@ -1,212 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flexbox Lab Finished Layout</title>
-<style>
-/* --- All CSS included here --- */
-
-/* Reset */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* NAV */
-.top-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: white;
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.logo {
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: black;
-}
-
-.nav-right button {
-  margin-left: 1rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 4px;
-}
-
-.nav-right .sign-up {
-  background-color: #d63333; /* red */
-  color: white;
-}
-
-/* HERO */
-#hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-}
-
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-  max-width: 600px;
-}
-
-.hero-content h1 { margin: 0; font-size: 2.5rem; }
-.hero-content p { margin: 0; font-size: 1.2rem; }
-
-.search-bar {
-  padding: 0.75rem 1rem;
-  border: none;
-  border-radius: 25px;
-  width: 100%;
-  max-width: 400px;
-}
-
-/* Trending searches as single row with label */
-.trending-row {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-
-.trending-label {
-  font-weight: bold;
-  color: white;
-  font-size: 0.95rem;
-}
-
-.trending-items button {
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  border: none;
-  background-color: white; /* white background */
-  color: black;
-  font-size: 0.9rem;
-}
-
-/* SUBNAV */
-#subnav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: white;
-}
-
-#subnav button { padding: 0.5rem 1rem; border-radius: 4px; }
-
-/* CARDS */
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 300px;
-  height: 300px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: white;
-}
-
-.card-body { flex: 1; background-color: #ccc; }
-
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem;
-  background-color: #f9f9f9;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Lab Final Page</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
-<!-- NAV -->
-<nav class="top-nav">
-  <div class="nav-left">
-    <a href="#" class="logo">My Web Design Site</a>
-    <ul class="nav-links">
-      <li><a href="#">Learn Design</a></li>
-      <li><a href="#">Find Inspiration</a></li>
-      <li><a href="#">Get Hired</a></li>
-    </ul>
-  </div>
-  <div class="nav-right">
-    <button>Sign in</button>
-    <button class="sign-up">Sign up</button>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-content">
-    <h1>Explore the world’s best web designs.</h1>
-    <p>Created by top-rated design and creative professionals.</p>
-    <input type="text" placeholder="Search..." class="search-bar" />
-
-    <!-- Trending searches row -->
-    <div class="trending-row">
-      <span class="trending-label">Trending searches:</span>
-      <div class="trending-items">
-        <button>Portfolio</button>
-        <button>UI Design</button>
-        <button>Landing Page</button>
-        <button>Web App</button>
-      </div>
+  <nav>
+    <div id="destinations">
+      <p>My Web Design Site</p>
+      <p>Learn Design</p>
+      <p>Find Inspiration</p>
+      <p>Get Hired</p>
     </div>
+    <div id="actions">
+      <p>🔍</p>
+      <p>Sign in</p>
+      <button>Sign up</button>
+    </div>
+  </nav>
+  <section id="hero">
+    <div id="headers">
+      <h1>Explore the world's best web designs.</h1>
+      <h2>Created by top-rated design and creative professionals.</h2>
+    </div>
+    <input type="text" placeholder="Search..."/>
+    <div id="trending">
+      Trending searches
+      <p>Content</p>
+      <p>Content</p>
+      <p>Content</p>
+      <p>Content</p>
+    </div>
+  </section>
+  <div id="subnav">
+    <button id="sort">Popular</button>
+    <button id="filter">Filter</button>
   </div>
-</section>
+  <main>
+    <article class="card">
+      <div class="img-placeholder"></div>
+      <div class="card-footer">
+        <h3>Team</h3>
+        <p>❤️ XX 👁️ XX</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img-placeholder"></div>
+      <div class="card-footer">
+        <h3>Team</h3>
+        <p>❤️ XX 👁️ XX</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img-placeholder"></div>
+      <div class="card-footer">
+        <h3>Team</h3>
+        <p>❤️ XX 👁️ XX</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img-placeholder"></div>
+      <div class="card-footer">
+        <h3>Team</h3>
+        <p>❤️ XX 👁️ XX</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img-placeholder"></div>
+      <div class="card-footer">
+        <h3>Team</h3>
+        <p>❤️ XX 👁️ XX</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img-placeholder"></div>
+      <div class="card-footer">
+        <h3>Team</h3>
+        <p>❤️ XX 👁️ XX</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img-placeholder"></div>
+      <div class="card-footer">
+        <h3>Team</h3>
+        <p>❤️ XX 👁️ XX</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img-placeholder"></div>
+      <div class="card-footer">
+        <h3>Team</h3>
+        <p>❤️ XX 👁️ XX</p>
+      </div>
+    </article>
+  </main>
 
-<!-- SUBNAV -->
-<div id="subnav">
-  <button>Popular</button>
-  <button>Filter</button>
-</div>
-
-<!-- CARDS -->
-<main class="card-container">
-  <div class="card"><div class="card-body"></div><div class="card-footer"><span>Team</span><span>❤️ 12</span></div></div>
-  <div class="card"><div class="card-body"></div><div class="card-footer"><span>Team</span><span>❤️ 8</span></div></div>
-  <div class="card"><div class="card-body"></div><div class="card-footer"><span>Team</span><span>❤️ 5</span></div></div>
-</main>
-
+  
 </body>
 </html>
